@@ -302,7 +302,7 @@ public class DefaultLifecycleProcessor implements LifecycleProcessor, BeanFactor
 
 		private final List<LifecycleGroupMember> members = new ArrayList<LifecycleGroupMember>();
 
-		private Map<String, ? extends Lifecycle> lifecycleBeans = getLifecycleBeans();
+		private final Map<String, ? extends Lifecycle> lifecycleBeans;
 
 		private volatile int smartMemberCount;
 
